@@ -1,55 +1,96 @@
-.container {
-    display: flex; 
-    width: 90%; 
-    margin: auto;
+.navbarcontainer {
+  display: flex;
+  width: 90%;
+  margin: auto;
 }
 
 .logo {
-    flex: 0.5
+  flex: 0.5;
 }
 
 .menu {
-    display: flex; 
-    flex: 1;
-    font-size: 22px;
+  display: flex;
+  flex: 1;
+  font-size: 18px;
 }
 
 .menuItem {
-    display: flex; 
-    flex: 1; 
-    align-items: center;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  cursor: pointer;
+  /*ji leo pen mue*/
 }
-
+.menuItem:hover {
+  color: white;
+}
 .button {
-    flex: 1; 
-    display: flex; 
-    justify-content: flex-end; 
-    align-items: center;
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .loginButtonStyle {
-    background-color: white; 
-    border: none;
-    padding: 10px 60px;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-right: 5px;
+  background-color: white;
+  border: none;
+  padding: 10px 60px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 5px;
 }
 
 .loginButtonStyle:hover {
-    background-color: #ddd;
+  background-color: #ddd;
 }
 
 .getStartButtonStyle {
-    background-color: darkblue; 
-    color: white;
-    border: none;
-    padding: 10px 60px;
-    border-radius: 4px;
-    cursor: pointer;
+  background-color: darkblue;
+  color: white;
+  border: none;
+  padding: 10px 60px;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .getStartButtonStyle:hover {
-    background-color: #ddd;
-    color: black;
+  background-color: #ddd;
+  color: black;
+}
+.Navbaricon{
+   flex: 1;
+    display: none;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+.Avatar{ 
+  
+  justify-content: flex-end;
+}
+
+/* mobile device */
+@media screen and (max-width: 599px) {
+  .menu {
+    display: none;
+  }
+}
+/* ipad or mackook  */
+@media screen and (max-width: 899px) {
+  .menu {
+    display: none;
+  }
+  .button {
+    display: none;
+  }
+  .Navbaricon{
+    display: flex;
+  }
+
+}
+/* notbiik or desktop */
+@media screen and (max-width: 1200px) {
+  .menu {
+    display: none;
+  }
 }

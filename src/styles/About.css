@@ -1,0 +1,31 @@
+.readmore { 
+    background-color: black;
+    color:white; 
+    border: none;
+    padding: 15px 40px;
+    border-radius: 0px;
+    cursor: pointer;
+    margin-right: 5px;
+    font-size: 18px;
+}
+.readmore:hover{
+    background-color: white;
+    color: black;
+}
+.image {
+    flex: 1;
+    padding-top: 15%;
+
+}
+.info {
+    flex: 1;
+    padding-top: 15%;
+}
+.container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+.p0{font-size: 50px;}
+.p1{font-size: 30px;}
+.p2{font-size: 25px;}
