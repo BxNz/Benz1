@@ -46,7 +46,7 @@ export default function Navbar(props) {
   const handlogin = () => {
     console.log(authData);
     axios({
-      url: "http://localhost:3000/Login",
+      url: window.$api + "/Login",
       method: "POST",
       data: authData,
     }).then((res) => {
@@ -60,7 +60,7 @@ export default function Navbar(props) {
   //ສ້າງໄວ້ເປັນຟັງສັນຂອງການເພີ່ມຂໍ້ມູນ
   const handRegister = () => {
     axios({
-      url: "http://localhost:3000/Register",
+      url: window.$api+ '/Register',
       method: "POST",
       data: authData,
     }).then((res) => {
