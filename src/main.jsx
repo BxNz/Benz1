@@ -7,7 +7,7 @@ import './index.css'
 // window.$api = 'http://localhost:3000'
 
 //product
-window.$api = 'http://benapi.wannabedevs.com'
+window.$api = 'https://benapi.wannabedevs.com'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
